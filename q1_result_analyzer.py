@@ -1,7 +1,7 @@
 def analyze_result(name,roll,marks):
     print(f"Student: {name} (Roll: {roll} )")
     total = sum(marks)
-    average = total/5
+    average = total/len(marks)
     print(f"Total: {total}, Average:  {average:.1f}")
     
     if average >= 90:
@@ -20,5 +20,5 @@ def analyze_result(name,roll,marks):
     for i in range(len(marks)):
         if marks[i] < 40:
             print(f"Subject {i+1}")
-analyze_result("Puja",32,[98.5,92.0,76.9,98.9,34.5])
+analyze_result("Saranya",12,[80.5,69.0,76.9,42.9,34.5])
     
